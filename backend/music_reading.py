@@ -10,6 +10,7 @@ import tkinter as tk
     # b.show()
 
 def scanningMusic(input_path, output_path):
+    folderSheetMusic(output_path)
     command = ['oemer', input_path, '-o', output_path, '--save-cache']
     subprocess.run(command, check=True)
     
@@ -115,7 +116,6 @@ def main():
     input_path = os.path.join('..', 'sheets', jpg_file)
     output_path = os.path.join('..', 'xmls', name_of_sheet)
 
-    # folderSheetMusic(output_path)
     # scanningMusic(input_path, output_path)
     # audioOutput(output_path, musicxml_file, midi_file)
 
