@@ -114,7 +114,7 @@ def main():
     jpg_file = name_of_sheet + '.jpg'
 
     input_path = os.path.join('..', 'sheets', jpg_file)
-    output_path = os.path.join('..', 'xmls', name_of_sheet)
+    output_path = os.path.join('..', 'model', name_of_sheet)
 
     # scanningMusic(input_path, output_path)
     # audioOutput(output_path, musicxml_file, midi_file)
