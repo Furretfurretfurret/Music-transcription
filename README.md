@@ -1,1 +1,2 @@
 # Music-transcription
+This code allows us to be able to run the Oemer music transcription model, to get musicXML files out of scanned sheet music. It also lets us convert user inputted musicXML files to MIDI, in which the user may then playback the audio to confirm its correctness.
