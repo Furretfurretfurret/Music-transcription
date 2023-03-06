@@ -46,5 +46,8 @@ def main():
     pygame.mixer.music.load(os.path.join(output_path, midi_file))
     pygame.mixer.music.play()
 
+    while pygame.mixer.music.get_busy() == True:
+        continue
+
 if __name__ == "__main__":
     main()
