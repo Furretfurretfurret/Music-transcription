@@ -86,22 +86,22 @@ class AudioPlayer:
             self.paused = False
 
 
-# def audioOutput(output_path, musicxml_file, midi_file):
-#     pygame.init()
+def audioOutput(output_path, musicxml_file, midi_file):
+    pygame.init()
 
-#     # Convert MusicXML to MIDI
-#     s = converter.parse(os.path.join(output_path, musicxml_file))
-#     mf = midi.translate.streamToMidiFile(s)
-#     mf.open(os.path.join(output_path, midi_file), 'wb')
-#     mf.write()
-#     mf.close()
+    # Convert MusicXML to MIDI
+    s = converter.parse(os.path.join(output_path, musicxml_file))
+    mf = midi.translate.streamToMidiFile(s)
+    mf.open(os.path.join(output_path, midi_file), 'wb')
+    mf.write()
+    mf.close()
 
-#     # Load and play the MIDI file with pygame
-#     pygame.mixer.music.load(os.path.join(output_path, midi_file))
-#     pygame.mixer.music.play()
+    # Load and play the MIDI file with pygame
+    pygame.mixer.music.load(os.path.join(output_path, midi_file))
+    pygame.mixer.music.play()
 
-#     while pygame.mixer.music.get_busy() == True:
-#         continue
+    while pygame.mixer.music.get_busy() == True:
+        continue
 
 def main():
     name_of_sheet = 'Glimpse_of_us_jpg-1.jpg'
@@ -118,13 +118,11 @@ def main():
     # folderSheetMusic(output_path)
     # scanningMusic(input_path, output_path)
     # audioOutput(output_path, musicxml_file, midi_file)
+
+
     root = tk.Tk()
     audio_player = AudioPlayer(root, output_path, musicxml_file, midi_file)
     root.mainloop()
-
-    
-
-    
 
 if __name__ == "__main__":
     main()
