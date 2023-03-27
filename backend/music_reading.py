@@ -105,7 +105,7 @@ def audioOutput(output_path, musicxml_file, midi_file):
         continue
 
 def main():
-    name_of_sheet = 'Glimpse_of_us_jpg-1.jpg'
+    name_of_sheet = 'dragonspine.jpg'
     index = name_of_sheet.find('.', 2)
     name_of_sheet = name_of_sheet[0:index]
 
@@ -116,7 +116,7 @@ def main():
     input_path = os.path.join('..', 'sheets', jpg_file)
     output_path = os.path.join('..', 'model', name_of_sheet)
 
-    # scanningMusic(input_path, output_path)
+    scanningMusic(input_path, output_path)
     # audioOutput(output_path, musicxml_file, midi_file)
 
 
